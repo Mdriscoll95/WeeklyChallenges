@@ -64,7 +64,7 @@ namespace ChallengesWithTestsMark8
         public string GetHey()
         {
 
-            var GetHey = "hey";
+            var GetHey = "HEY!";
             return (GetHey);
 
 

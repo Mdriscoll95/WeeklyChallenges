@@ -51,7 +51,7 @@ namespace ChallengesWithTestsMark8
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            if (str1.Length > str2.Length)
+            if (str1.Length < str2.Length)
             {
                 return str1.Length;
             }
@@ -63,6 +63,11 @@ namespace ChallengesWithTestsMark8
 
         public int Sum(int[] numbers)
         {
+            if(numbers == null)
+            {
+                return 0;
+            }
+
             return numbers.Sum();
         }
 

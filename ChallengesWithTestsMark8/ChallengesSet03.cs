@@ -99,13 +99,26 @@ namespace ChallengesWithTestsMark8
         }
 
         public int[] GetOddsBelow100()
+            
         {
-            throw new NotImplementedException();
+            List<int> odds = new List<int>();
+            for (int i = 0; i < 100; i++)
+            {
+                if(i % 2 != 0) 
+                {
+                    odds.Add(i);
+                }
+
+            }
+            return odds.ToArray();
         }
 
         public void ChangeAllElementsToUppercase(string[] words)
         {
-            throw new NotImplementedException();
+            for(int z = 0; z < words.Length; z++)
+            {
+                words[z] = words[z].ToUpper();
+            }
         }
     }
 }
